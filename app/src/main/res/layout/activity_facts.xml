@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".Facts">
+    <ImageView
+        android:id="@+id/back1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+    <TextView
+        android:id="@+id/ftxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/leckerli_one"
+        android:text="Tech Facts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#fff"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ftxt"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+            <include layout="@layout/placeholderother" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_below="@+id/ftxt"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Maximo</string>
+    <string name="desc">Image</string>
+    <string name="title">Tech Maximo</string>
+    <string name="accept">By Accepting all Terms and Policies</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <string name="profile">Profile</string>
+    <string name="card_name">Your Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_to_tech_maximo">Welcome to Tech Maximo</string>
+    <string name="first_screen">Before you go into Maximo,\nHere\'s what you all need to know about:\n\n ❥ Maximo is a like you\'ve never seen app that has the most comprehensive news analysis ever undertaken.
+        \n\n ❥ The UI is clean and shiny so you can find news very comfortably.\n\n ❥ Comes with inbuilt Dark theme enhance.
+</string>
+    <string name="about_me"><![CDATA[I design, code simple things from scratch & I love what I do]]></string>
+    <string name="qdesc">Living, Learning and\n Leveling up\n one day at a time</string>
+    <string name="intro_ex">Technology takes many forms in today’s world.\nThe Introduction to Technology
+        course explores the fundamentals of technology education while broadening awareness about the pervasiveness
+        of technology in our daily lives because of the three main reasons:\n\n1.More information.\n2.More alternatives.\n3.Easy transaction.</string>
+
+</resources>

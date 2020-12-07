@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ExploreFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/extoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colortertiaryDark"
+            app:title="@string/explore"
+            app:titleTextColor="#fff"
+            android:elevation="4dp">
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/techintro"
+            android:layout_below="@id/extoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textFontWeight="900"
+            android:text="@string/intro_ex"
+            android:fontFamily="@font/montserrat"
+            />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/excard1"
+            android:layout_below="@+id/techintro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/expimg1"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:scaleType="fitCenter"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@color/colortertiaryDark"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Tech Quotes"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/excard2"
+            android:layout_below="@+id/excard1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/expimg2"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:background="@color/colortertiaryDark"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:text="Tech Facts"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

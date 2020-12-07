@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.abhi.projectone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Facts"/>
+        <activity android:name=".Quotes" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".DetailActivity"
+            android:theme="@style/ThirdTheme"
+            android:label="Tech Post"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DeveloperActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ExploreFragment"
+            android:theme="@style/ThirdTheme" />
+        <activity
+            android:name=".IntroActivity"
+            android:theme="@style/MainTheme" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
